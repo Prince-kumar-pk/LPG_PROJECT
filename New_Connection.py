@@ -112,7 +112,7 @@ class Lpg:
             try:
 
 
-                cn=mysql.connector.connect(host="localhost",username="root",password="P123456k@",database="lpg")
+                cn=mysql.connector.connect(host="localhost",username="root",password="",database="lpg") #put pasword by your own 
                 cur=cn.cursor()
                 cur.execute("insert into connection values(%s,%s,%s,%s,%s,%s,%s)",(
                                                                                    self.var_state.get(),
